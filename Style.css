@@ -1,0 +1,223 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#navbar-pinterest {
+    background-color: aliceblue;
+    color: #000000;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+#pinterest-icon{
+    padding-top: 10px;
+    padding: 10px;
+    height: 30px;
+    width: 30px;
+}
+#pinterest-icon:hover{
+    cursor: pointer;
+    background-color: gainsboro;
+    border-radius: 50%;
+    
+}
+#message{
+    padding-top: 10px;
+    padding: 10px;
+    height: 30px;
+    width: 30px;
+}
+#message:hover{
+    cursor: pointer;
+    background-color: gainsboro;
+    border-radius: 50%;
+    
+}
+#notifications{
+    padding-top: 15px;
+    padding: 10px;
+    height: 30px;
+    width: 30px;
+}
+#notifications:hover{
+    cursor: pointer;
+    background-color: gainsboro;
+    border-radius: 50%;
+    
+}
+#profile-img{
+    display: flex;
+    padding: 10px;
+    height: 30px;
+    width: 30px;
+}
+#profile-img:hover{
+    cursor: pointer;
+    background-color: gainsboro;
+    border-radius: 50%;
+    
+    
+}
+#content{
+    display: flex;
+    column-gap: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 75px;
+
+    
+}
+.finder{
+    width: 700px;
+    height: 47px;
+    border: none;
+    border-radius: 25px;
+    background-color: gainsboro;
+    
+}
+
+.navbar-pinterest{
+    padding-right: 5px;
+    
+}
+.navbar-pinterest img{
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translate(-50%);
+    width: 20px;
+    height: 20px;
+    
+}
+.icon{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    height: 1fr;
+
+
+    
+}
+.dos:hover{
+    cursor: pointer;
+    background-color: rgb(41, 41, 41);
+    height: 1fr;
+    width: 100px;
+    border: none;
+    border-radius: 30px;
+    color: aliceblue;
+    transition: background-color 0.3s ease;
+    align-items: center; 
+    
+}
+.contenedor2{
+       column-count: 6;
+       column-gap: 10px;
+       padding: 0px;
+        
+}
+.card-image{
+    flex: 1;
+    break-inside: avoid-column;
+    border-radius: 20px;
+    position: relative;
+    
+    
+}
+
+.card-image img{
+    width: 100%;
+    border-radius: 20px;
+    transition: transform 0.1, box-shadow 0.3;
+    
+    
+}
+
+.card-image:hover{
+    cursor: zoom-in;
+    transform: scale(1.0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    color: aqua;
+    filter: grayscale(70%);
+    
+    
+    
+    
+    
+}
+
+.botones-superpuestos {
+    position: relative;
+    top: 1;
+    left: 50;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+.card-image:hover .botones-superpuestos {
+    opacity: 1;
+  }
+
+.boton {
+    color: #fff;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+.boton:hover {
+    background-color: #333;
+
+  }
+footer {
+    background-color: #bd4d4d;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    bottom: 0;
+    opacity: 100%;
+    border: solid 2px #000000;
+  }
+  @media screen and (max-width: 1112px) and (min-width: 0px) {
+    .contenedor2{
+        column-count: 4;
+    }
+    #navbar-pinterest{
+        opacity: 50%;
+     
+    }
+    
+
+    
+  }
+  @media screen and (max-width: 480px){
+    .contenedor2{
+        column-count: 2;
+    }
+    #navbar-pinterest{
+        opacity: 0%;
+    }
+
+    
+  }
